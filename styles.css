@@ -1,0 +1,289 @@
+/* Author: Jamie Manso
+Date: 24/10/2002
+Version: Week 09
+*/
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+/* Home Page
+-----------------------------------------
+*/
+
+body {
+/* Text color and style used */	
+    font-size: 16px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+
+/* Layout of the website including a background color and appropriate margins */    
+	margin: 50px;
+    margin-top: 0px;
+    background-color: #4D4D33; 
+}
+
+h1 {
+/* Defines the font size and position of H1*/
+    font-size: 3em;
+	font-weight: 700;
+    margin-top: 0;
+
+}
+
+
+h2 {
+/* Defines the font size H2*/
+    font-size: 1.6em;
+	font-weight: 700;
+
+}
+
+a {
+	color: skyblue; /* Skyblue */
+}
+
+a:visited {
+	color: #FFCCCB; /* Light red */
+}
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+/* Sets position of header */
+    display: inline;
+    margin-right: 20px;
+
+/* Brings header priority to front */
+    position: relative;
+    z-index: 999;
+
+}
+
+header img {
+  height: 100px;
+
+}
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+/* Sets background color to black */	
+    background-color: black;
+
+
+/* Positions the navigation bar */    
+    position: absolute;
+	top: 0px; left: 0px;
+	width: 100%; /* = 1200px */
+	padding-top: 45px;
+}
+
+nav a {
+/* Defines the decoration */
+    color: #ffffff; /* white */
+	text-decoration: none;
+    outline-style: none;
+
+/* Sets a position */    
+	padding: 10px 20px 15px 20px;
+
+}
+
+nav a:hover {
+/* Creates a box when hover over text */
+	background-color: #356d81; /* dark blue */
+}
+
+nav a:visited {
+	color: #ffffff; /* white */
+}
+
+nav ul {
+	padding-left: 200px;	
+    list-style: none; /* Removes the dot points */
+}
+
+nav li {
+/* Displays the list in a side by side view */	
+    display: inline;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+	background-color: #356d81; /* dark blue */
+    color: #ffffff;
+}
+
+
+
+/* CONTENT 1
+----------------------------------------
+*/
+#charity {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.2em;
+    
+/* Creates a box around text */
+	border: 2px solid #ffffff;
+	padding: 4px 15px;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("_images/banner.avif");
+
+  /* Set a specific size */
+  min-height: 600px;
+    width: 1160px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* CONTENT 2
+----------------------------------------
+*/
+    
+.parallax2 {
+  /* The image used */
+  background-image: url("_images/banner2.jpg");
+
+  /* Set a specific size */
+  min-height: 600px;
+    width: 1160px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* FOOTER
+----------------------------------------
+*/
+
+footer {
+    
+    display: flex; /* Displays the element as a flexible box */
+    margin: 0; /* removes the margin of the footer */
+    margin-top: 25px; /* creates a margin at the top */
+    font-size: 0.9em;
+    justify-content: center; /* Positions text central*/
+}
+footer address {
+    padding-left: 50px;
+}
+
+/*Equipment
+------------------------------------------
+*/
+
+summary {
+    font-size: 1.6em; /* 60% increase font size */
+    outline-style: solid; /* Sets the outline style to a solid line */
+    outline-color: white; /* Sets the outline color to white */
+    text-decoration: underline; /* Adds an underline to the text */
+    user-select: none; /* Disables user selection of the text */
+    padding: 10px; /* Adds 10 pixels of padding on all sides */
+    margin: 10px; /* Adds 10 pixels of margin on all sides */
+    width: 300px; /* Sets the width of the element to 300 pixels */
+}
+
+summary:hover {
+    background-color: black; /* Sets the background color to black when hovering over the element */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the element */
+}
+
+li::marker {
+    color: transparent; /* Makes the bullet points invisible */
+}
+
+details ul li::marker {
+    color: white; /* Sets the color of bullet points inside a span element to white */
+}
+
+/* Games/Fields 
+---------------------------------------------
+*/
+.gametypes {
+    display: flex; 
+    width: 1000px; /* Sets the width of the element to 1000 pixels */
+    padding-left: 10px; 
+}
+
+.gametypes img {
+    padding: 40px; 
+
+/* Sets the size of the img */
+    height: 300px; 
+    width: 400px; 
+}
+
+/* About us */
+.about1 {
+    display: flex; 
+}
+
+.about1 img {
+    padding: 50px; 
+}
+
+.about2 h2 {
+    margin: 0px; 
+}
+
+/* Locations 
+---------------------------------------------------
+*/
+iframe {
+    padding-top: 10px; 
+    padding-bottom: 40px; 
+    border-style: none; /* Removes the border style */
+}
+
+/* Contact Us
+---------------------------------------------------
+*/
+
+/* Apply styles to input fields of type "text", select elements, and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* 1200px */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Adds a top margin */
+    margin-bottom: 16px; /* Adds a Bottom margin */
+}
+
+/* Style the submit button with a specific background color, text color, padding, border, and cursor */
+input[type=submit] {
+    background-color: #04AA6D; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer */
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049; /* Green */
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+    border-radius: 5px; /* Border radius: 5px */
+    padding: 20px; /* Padding: 20px */
